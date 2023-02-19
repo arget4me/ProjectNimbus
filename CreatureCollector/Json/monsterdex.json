@@ -1,0 +1,107 @@
+{
+    "0": [
+        {
+            "name": "Emberling",
+            "description": "A small, fiery creature with a mischievous personality. It loves to play pranks on unsuspecting travelers.",
+            "type": "Fire",
+            "stats": {
+                "health": 50,
+                "defence": 10,
+                "attack": 20,
+                "speed": 30
+            }
+        },
+        {
+            "name": "Infernotaur",
+            "description": "A fierce beast made entirely of flames. It is highly aggressive and will attack anything that comes too close.",
+            "type": "Fire",
+            "stats": {
+                "health": 100,
+                "defence": 20,
+                "attack": 40,
+                "speed": 10
+            }
+        },
+        {
+            "name": "Pyroclasm",
+            "description": "A towering inferno of a creature that leaves a trail of destruction in its wake. It is said that its roar can cause volcanic eruptions.",
+            "type": "Fire",
+            "stats": {
+                "health": 200,
+                "defence": 40,
+                "attack": 80,
+                "speed": 5
+            }
+        }
+    ],
+    "1": [
+        {
+            "name": "Sproutling",
+            "description": "A cute and friendly creature made of leaves and vines. It enjoys basking in the sun and helping out with gardening.",
+            "type": "Nature",
+            "stats": {
+                "health": 60,
+                "defence": 15,
+                "attack": 10,
+                "speed": 25
+            }
+        },
+        {
+            "name": "Thornbloom",
+            "description": "A plant-based creature with a sharp and thorny exterior. It is fiercely protective of its Sproutling companions and will defend them at all costs.",
+            "type": "Nature",
+            "stats": {
+                "health": 120,
+                "defence": 30,
+                "attack": 20,
+                "speed": 10
+            }
+        },
+        {
+            "name": "Verdantian",
+            "description": "A towering, ancient creature that embodies the power of nature. It is said that it can control the elements and heal the sick with its presence.",
+            "type": "Nature",
+            "stats": {
+                "health": 240,
+                "defence": 60,
+                "attack": 40,
+                "speed": 5
+            }
+        }
+    ],
+    "2": [
+        {
+            "name": "Coralite",
+            "description": "A small and gentle creature that resembles a piece of coral. It is peaceful and spends most of its time floating near the ocean floor.",
+            "type": "Water",
+            "stats": {
+                "health": 50,
+                "defence": 60,
+                "attack": 10,
+                "speed": 20
+            }
+        },
+        {
+            "name": "Crushstream",
+            "description": "A fast and aggressive creature that resembles a shark. It is feared by many sailors and can take down entire ships with ease.",
+            "type": "Water",
+            "stats": {
+                "health": 80,
+                "defence": 40,
+                "attack": 90,
+                "speed": 70
+            }
+        },
+        {
+            "name": "Leviathan",
+            "description": "A massive sea serpent that can swallow entire islands whole. It is rarely seen and only emerges from the depths of the ocean during times of great danger.",
+            "type": "Water",
+            "stats": {
+                "health": 100,
+                "defence": 90,
+                "attack": 100,
+                "speed": 30
+            }
+        }
+    ]
+}
