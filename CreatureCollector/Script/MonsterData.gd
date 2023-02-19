@@ -11,6 +11,21 @@ class MonsterData:
 	var defence : int
 	var speed : int
 
+func ParseAllMonstersJson(var filename) -> Array:
+	var monsterList = []
+	var file = File.new()
+	file.open("res://Json/" +filename+ ".json", File.READ)
+	var content = file.get_as_text()
+	file.close()
+	var json = JSON.parse(content)
+	for i in range(3):
+		print("Group:", i)
+		for j in range(3):
+			var monsterJson = json.result[str(i)][j]
+			var m = MonsterDataSingelton.ParseMonsterData(monsterJson)
+			monsterList.append(m)
+	return monsterList
+
 func ParseMonsterData(var monsterJson) -> MonsterData:
 	var m = MonsterData.new()
 	m.name = monsterJson.name
