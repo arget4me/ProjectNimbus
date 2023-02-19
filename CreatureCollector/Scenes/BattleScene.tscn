@@ -7,7 +7,10 @@
 script = ExtResource( 2 )
 
 [node name="Enemy" type="Node2D" parent="."]
-position = Vector2( 792, 140 )
+position = Vector2( 733, 304 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Enemy"]
 texture = ExtResource( 1 )
@@ -30,7 +33,10 @@ Defence:
 Speed:    "
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 146, 466 )
+position = Vector2( 250, 306 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Player"]
 texture = ExtResource( 1 )

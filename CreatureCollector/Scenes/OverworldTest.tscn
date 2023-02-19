@@ -1,0 +1,194 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Images/fire.png" type="Texture" id=1]
+[ext_resource path="res://Images/icon.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Player.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Fire3.gd" type="Script" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 30.0666
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ColorRect7" type="ColorRect" parent="Node2D"]
+margin_left = 505.0
+margin_top = 459.0
+margin_right = 819.0
+margin_bottom = 659.0
+color = Color( 0.376471, 0.6, 0.321569, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Node2D/ColorRect7"]
+margin_right = 314.0
+margin_bottom = 59.0
+color = Color( 0.435294, 0.172549, 0.172549, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="Node2D/ColorRect7"]
+margin_left = 96.0
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 196.0
+color = Color( 0.462745, 0.27451, 0.203922, 1 )
+
+[node name="ColorRect8" type="ColorRect" parent="Node2D"]
+margin_left = 4.0
+margin_top = 453.0
+margin_right = 318.0
+margin_bottom = 653.0
+color = Color( 0.376471, 0.6, 0.321569, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Node2D/ColorRect8"]
+margin_right = 314.0
+margin_bottom = 59.0
+color = Color( 0.435294, 0.172549, 0.172549, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="Node2D/ColorRect8"]
+margin_left = 96.0
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 196.0
+color = Color( 0.462745, 0.27451, 0.203922, 1 )
+
+[node name="ColorRect9" type="ColorRect" parent="Node2D"]
+margin_left = 1475.0
+margin_top = -229.0
+margin_right = 1789.0
+margin_bottom = -29.0
+color = Color( 0.376471, 0.6, 0.321569, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Node2D/ColorRect9"]
+margin_right = 314.0
+margin_bottom = 59.0
+color = Color( 0.435294, 0.172549, 0.172549, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="Node2D/ColorRect9"]
+margin_left = 96.0
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 196.0
+color = Color( 0.462745, 0.27451, 0.203922, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+margin_left = 399.0
+margin_top = 15.0
+margin_right = 468.0
+margin_bottom = 757.0
+color = Color( 0.54902, 0.47451, 0.380392, 1 )
+
+[node name="ColorRect4" type="ColorRect" parent="Node2D"]
+margin_left = 1307.0
+margin_top = -667.0
+margin_right = 1376.0
+margin_bottom = 75.0
+color = Color( 0.54902, 0.47451, 0.380392, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Node2D"]
+margin_left = -298.0
+margin_top = 697.0
+margin_right = 1178.0
+margin_bottom = 757.0
+color = Color( 0.54902, 0.47451, 0.380392, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="Node2D"]
+margin_left = 399.0
+margin_top = 13.0
+margin_right = 1875.0
+margin_bottom = 73.0
+color = Color( 0.54902, 0.47451, 0.380392, 1 )
+
+[node name="ColorRect5" type="ColorRect" parent="Node2D"]
+margin_left = 927.0
+margin_top = -220.0
+margin_right = 1241.0
+margin_bottom = -20.0
+color = Color( 0.376471, 0.6, 0.321569, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Node2D/ColorRect5"]
+margin_right = 314.0
+margin_bottom = 59.0
+color = Color( 0.435294, 0.172549, 0.172549, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="Node2D/ColorRect5"]
+margin_left = 96.0
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 196.0
+color = Color( 0.462745, 0.27451, 0.203922, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Node2D"]
+margin_left = 452.0
+margin_top = -226.0
+margin_right = 766.0
+margin_bottom = -26.0
+color = Color( 0.376471, 0.6, 0.321569, 1 )
+
+[node name="ColorRect6" type="ColorRect" parent="Node2D/ColorRect6"]
+margin_right = 314.0
+margin_bottom = 59.0
+color = Color( 0.435294, 0.172549, 0.172549, 1 )
+
+[node name="ColorRect7" type="ColorRect" parent="Node2D/ColorRect6"]
+margin_left = 96.0
+margin_top = 118.0
+margin_right = 156.0
+margin_bottom = 196.0
+color = Color( 0.462745, 0.27451, 0.203922, 1 )
+
+[node name="Fire3" type="Sprite" parent="."]
+position = Vector2( 820, 144 )
+scale = Vector2( 0.406593, 0.406593 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+RoamPositions = PoolVector2Array( 64, 64, 1200, 64, 1200, 800 )
+
+[node name="Area2D" type="Area2D" parent="Fire3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fire3/Area2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="Fire4" type="Sprite" parent="."]
+position = Vector2( 1352, -144 )
+scale = Vector2( 0.406593, 0.406593 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+RoamPositions = PoolVector2Array( 64, 64, 1200, 64, 1200, 800 )
+
+[node name="Area2D" type="Area2D" parent="Fire4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fire4/Area2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="Fire5" type="Sprite" parent="."]
+position = Vector2( 431, 711 )
+scale = Vector2( 0.406593, 0.406593 )
+texture = ExtResource( 1 )
+script = ExtResource( 4 )
+RoamPositions = PoolVector2Array( 64, 400, 1200, 64, 1200, -500 )
+
+[node name="Area2D" type="Area2D" parent="Fire5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fire5/Area2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="Player"]
+texture = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+smoothing_enabled = true
+smoothing_speed = 3.0
+
+[node name="Area2D" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
+
+[connection signal="area_entered" from="Player/Area2D" to="Player" method="_on_Area2D_area_entered"]
