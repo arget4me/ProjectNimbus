@@ -18,7 +18,7 @@ func ParseAllMonstersJson(var filename) -> Array:
 	var content = file.get_as_text()
 	file.close()
 	var json = JSON.parse(content)
-	for i in range(3):
+	for i in range(5):
 		print("Group:", i)
 		for j in range(3):
 			var monsterJson = json.result[str(i)][j]

@@ -103,5 +103,75 @@
                 "speed": 30
             }
         }
+    ],
+    "3": [
+        {
+            "name": "Thornstrike",
+            "description": "A fierce and nimble creature, Thornstrike attacks with lightning-fast reflexes, striking its enemies with sharp thorns and using its agility to evade attacks.",
+            "type": "Nature",
+            "stats": {
+                "health": 50,
+                "defence": 30,
+                "attack": 80,
+                "speed": 90
+            }
+        },
+        {
+            "name": "Boulderhide",
+            "description": "A massive creature with tough, rock-like skin, Boulderhide uses its immense strength to crush anything that stands in its way. Its powerful defense makes it nearly impervious to physical attacks.",
+            "type": "Nature",
+            "stats": {
+                "health": 100,
+                "defence": 90,
+                "attack": 50,
+                "speed": 20
+            }
+        },
+        {
+            "name": "Wildroot",
+            "description": "A towering creature that resembles a massive tree, Wildroot is a master of nature magic. It can summon vines and roots to ensnare enemies and can heal itself and its allies.",
+            "type": "Nature",
+            "stats": {
+                "health": 150,
+                "defence": 70,
+                "attack": 70,
+                "speed": 10
+            }
+        }
+    ],
+    "4": [
+        {
+            "name": "Infernopup",
+            "description": "A small and agile creature with fiery red fur, Infernopup runs circles around its enemies while launching fireballs from its mouth.",
+            "type": "Fire",
+            "stats": {
+                "health": 50,
+                "defence": 30,
+                "attack": 70,
+                "speed": 90
+            }
+        },
+        {
+            "name": "Blazeclaw",
+            "description": "A larger and more ferocious version of Infernopup, Blazeclaw is covered in fiery red scales and attacks its enemies with razor-sharp claws and powerful fire breath.",
+            "type": "Fire",
+            "stats": {
+                "health": 80,
+                "defence": 50,
+                "attack": 90,
+                "speed": 70
+            }
+        },
+        {
+            "name": "Infernodragon",
+            "description": "The ultimate form of these Fire creatures, Infernodragon is a massive dragon covered in flames that can fly and breathe fire from its jaws. Its tough scales make it nearly immune to fire attacks.",
+            "type": "Fire",
+            "stats": {
+                "health": 120,
+                "defence": 90,
+                "attack": 80,
+                "speed": 50
+            }
+        }
     ]
 }
