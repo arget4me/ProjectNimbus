@@ -13,6 +13,10 @@ config_version=4
 config/name="CreatureCollector"
 config/icon="res://Images/icon.png"
 
+[autoload]
+
+MonsterDataSingelton="*res://Script/MonsterData.gd"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
