@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Script/MonsterWiki.gd" type="Script" id=1]
+
+[node name="MonsterWiki" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Name" type="RichTextLabel" parent="MarginContainer/Panel"]
+margin_left = 124.0
+margin_top = 79.0
+margin_right = 381.0
+margin_bottom = 138.0
+text = "Name"
+
+[node name="Health" type="RichTextLabel" parent="MarginContainer/Panel"]
+margin_left = 306.0
+margin_top = 365.0
+margin_right = 363.0
+margin_bottom = 405.0
+text = "HP"
+
+[node name="Attack" type="RichTextLabel" parent="MarginContainer/Panel"]
+margin_left = 416.0
+margin_top = 362.0
+margin_right = 472.0
+margin_bottom = 402.0
+text = "ATK"
+
+[node name="Defence" type="RichTextLabel" parent="MarginContainer/Panel"]
+margin_left = 540.0
+margin_top = 363.0
+margin_right = 601.0
+margin_bottom = 403.0
+text = "DFS"
+
+[node name="Speed" type="RichTextLabel" parent="MarginContainer/Panel"]
+margin_left = 668.0
+margin_top = 364.0
+margin_right = 728.0
+margin_bottom = 404.0
+text = "SPD"
+
+[node name="Previous" type="Button" parent="MarginContainer/Panel"]
+margin_left = 325.0
+margin_top = 455.0
+margin_right = 413.0
+margin_bottom = 509.0
+text = "Previous"
+
+[node name="Next" type="Button" parent="MarginContainer/Panel"]
+margin_left = 611.0
+margin_top = 455.0
+margin_right = 699.0
+margin_bottom = 505.0
+text = "Next "
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Panel"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[connection signal="pressed" from="MarginContainer/Panel/Previous" to="." method="_on_Previous_pressed"]
+[connection signal="pressed" from="MarginContainer/Panel/Next" to="." method="_on_Next_pressed"]
