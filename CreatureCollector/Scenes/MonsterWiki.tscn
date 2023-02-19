@@ -20,31 +20,37 @@ margin_right = 381.0
 margin_bottom = 138.0
 text = "Name"
 
+[node name="Description" type="RichTextLabel" parent="MarginContainer/Panel"]
+margin_left = 214.0
+margin_top = 231.0
+margin_right = 818.0
+margin_bottom = 345.0
+
 [node name="Health" type="RichTextLabel" parent="MarginContainer/Panel"]
 margin_left = 306.0
 margin_top = 365.0
-margin_right = 363.0
+margin_right = 403.0
 margin_bottom = 405.0
 text = "HP"
 
 [node name="Attack" type="RichTextLabel" parent="MarginContainer/Panel"]
 margin_left = 416.0
 margin_top = 362.0
-margin_right = 472.0
+margin_right = 531.0
 margin_bottom = 402.0
 text = "ATK"
 
 [node name="Defence" type="RichTextLabel" parent="MarginContainer/Panel"]
 margin_left = 540.0
 margin_top = 363.0
-margin_right = 601.0
+margin_right = 659.0
 margin_bottom = 403.0
 text = "DFS"
 
 [node name="Speed" type="RichTextLabel" parent="MarginContainer/Panel"]
 margin_left = 668.0
 margin_top = 364.0
-margin_right = 728.0
+margin_right = 772.0
 margin_bottom = 404.0
 text = "SPD"
 

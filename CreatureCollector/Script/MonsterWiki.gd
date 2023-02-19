@@ -1,28 +1,34 @@
 extends CanvasLayer
 
+onready var monsterName = $MarginContainer/Panel/Name
+onready var monsterDescription = $MarginContainer/Panel/Description
+onready var monsterHealth = $MarginContainer/Panel/Health
+onready var monsterAttack = $MarginContainer/Panel/Attack
+onready var monsterDefence = $MarginContainer/Panel/Defence
+onready var monsterSpeed = $MarginContainer/Panel/Speed
+var monsterList
+var monsterCounter
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	monsterCounter = 0
+	monsterList = MonsterDataSingelton.ParseAllMonstersJson("monsterdex")
+	setMonster(monsterList[monsterCounter])
 
-onready var nameVar = $MarginContainer/Panel/Name
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
-func getMonsters():
-	pass
-
+func setMonster(var monster):
+	monsterName.text = monster.name
+	monsterDescription.text = monster.description
+	monsterHealth.text = "Health:" + str(monster.health)
+	monsterAttack.text = "Attack:" + str(monster.attack)
+	monsterDefence.text = "Defence:" + str(monster.defence)
+	monsterSpeed.text = "Speed:" + str(monster.speed)
 
 func _on_Previous_pressed():
-	nameVar.text = "APOSIjfaioHJF"
+	monsterCounter -= 1
+	monsterCounter %= monsterList.size()
+	setMonster(monsterList[monsterCounter])
 
 
 func _on_Next_pressed():
-	pass # Replace with function body.
+	monsterCounter += 1
+	monsterCounter %= monsterList.size()
+	setMonster(monsterList[monsterCounter])
