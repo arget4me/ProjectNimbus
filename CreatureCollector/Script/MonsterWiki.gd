@@ -26,7 +26,7 @@ func findMonsterImage(var monsterName) -> String:
 			else:
 				file_name = imageDirectory.get_next()
 	
-	return "xd"
+	return "res://Images/unkownmonster.png"
 
 func setMonster(var monster):
 	monsterName.text = monster.name
@@ -36,6 +36,8 @@ func setMonster(var monster):
 	monsterDefence.text = "Defence:" + str(monster.defence)
 	monsterSpeed.text = "Speed:" + str(monster.speed)
 	monsterImage.texture = load(findMonsterImage(monster.name))
+	if(monsterImage.texture):
+		monsterImage.scale = (Vector2(300,300))/(monsterImage.texture.get_size())
 
 func _on_Previous_pressed():
 	monsterCounter -= 1

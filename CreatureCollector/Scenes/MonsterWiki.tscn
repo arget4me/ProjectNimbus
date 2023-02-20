@@ -15,7 +15,7 @@ margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="MonsterImage" type="Sprite" parent="MarginContainer/Panel"]
-position = Vector2( 505, 203 )
+position = Vector2( 509, 153 )
 scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 2 )
 
@@ -27,37 +27,37 @@ margin_bottom = 138.0
 text = "Name"
 
 [node name="Description" type="RichTextLabel" parent="MarginContainer/Panel"]
-margin_left = 214.0
-margin_top = 231.0
-margin_right = 818.0
-margin_bottom = 345.0
+margin_left = 225.0
+margin_top = 319.0
+margin_right = 829.0
+margin_bottom = 433.0
 
 [node name="Health" type="RichTextLabel" parent="MarginContainer/Panel"]
-margin_left = 306.0
-margin_top = 365.0
-margin_right = 403.0
-margin_bottom = 405.0
+margin_left = 303.0
+margin_top = 394.0
+margin_right = 400.0
+margin_bottom = 434.0
 text = "HP"
 
 [node name="Attack" type="RichTextLabel" parent="MarginContainer/Panel"]
-margin_left = 416.0
-margin_top = 362.0
-margin_right = 531.0
-margin_bottom = 402.0
+margin_left = 413.0
+margin_top = 391.0
+margin_right = 528.0
+margin_bottom = 431.0
 text = "ATK"
 
 [node name="Defence" type="RichTextLabel" parent="MarginContainer/Panel"]
-margin_left = 540.0
-margin_top = 363.0
-margin_right = 659.0
-margin_bottom = 403.0
+margin_left = 537.0
+margin_top = 392.0
+margin_right = 656.0
+margin_bottom = 432.0
 text = "DFS"
 
 [node name="Speed" type="RichTextLabel" parent="MarginContainer/Panel"]
-margin_left = 668.0
-margin_top = 364.0
-margin_right = 772.0
-margin_bottom = 404.0
+margin_left = 665.0
+margin_top = 393.0
+margin_right = 769.0
+margin_bottom = 433.0
 text = "SPD"
 
 [node name="Previous" type="Button" parent="MarginContainer/Panel"]
