@@ -1,0 +1,107 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Character.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Images/environment/clouds.png" type="Texture" id=3]
+[ext_resource path="res://Images/environment/sea.png" type="Texture" id=4]
+[ext_resource path="res://Images/environment/sky.png" type="Texture" id=5]
+[ext_resource path="res://Images/environment/far-grounds.png" type="Texture" id=6]
+
+[node name="World" type="Node2D"]
+
+[node name="Sky" type="Sprite" parent="."]
+position = Vector2( 55, 155 )
+texture = ExtResource( 5 )
+
+[node name="Sky2" type="Sprite" parent="Sky"]
+position = Vector2( 110, 0 )
+texture = ExtResource( 5 )
+
+[node name="Sky3" type="Sprite" parent="Sky"]
+position = Vector2( 220, 0 )
+texture = ExtResource( 5 )
+
+[node name="Sky4" type="Sprite" parent="Sky"]
+position = Vector2( 442, 0 )
+texture = ExtResource( 5 )
+
+[node name="Sky6" type="Sprite" parent="Sky"]
+position = Vector2( 530, 0 )
+texture = ExtResource( 5 )
+
+[node name="Sky5" type="Sprite" parent="Sky"]
+position = Vector2( 330, 0 )
+texture = ExtResource( 5 )
+
+[node name="Clouds" type="Sprite" parent="."]
+position = Vector2( 230, 211 )
+texture = ExtResource( 3 )
+
+[node name="Clouds" type="Sprite" parent="Clouds"]
+position = Vector2( 427, 1 )
+texture = ExtResource( 3 )
+
+[node name="Far-grounds" type="Sprite" parent="."]
+position = Vector2( 233, 222 )
+texture = ExtResource( 6 )
+
+[node name="Sea" type="Sprite" parent="Far-grounds"]
+position = Vector2( -228, 93 )
+texture = ExtResource( 4 )
+
+[node name="Sea2" type="Sprite" parent="Far-grounds"]
+position = Vector2( -118, 93 )
+texture = ExtResource( 4 )
+
+[node name="Sea3" type="Sprite" parent="Far-grounds"]
+position = Vector2( -7, 93 )
+texture = ExtResource( 4 )
+
+[node name="Sea4" type="Sprite" parent="Far-grounds"]
+position = Vector2( 101, 93 )
+texture = ExtResource( 4 )
+
+[node name="Sea5" type="Sprite" parent="Far-grounds"]
+position = Vector2( 211, 93 )
+texture = ExtResource( 4 )
+
+[node name="Sea6" type="Sprite" parent="Far-grounds"]
+position = Vector2( 322, 93 )
+texture = ExtResource( 4 )
+
+[node name="Sea7" type="Sprite" parent="Far-grounds"]
+position = Vector2( 432, 93 )
+texture = ExtResource( 4 )
+
+[node name="Block" parent="." instance=ExtResource( 1 )]
+position = Vector2( 334, 253 )
+
+[node name="Block2" parent="Block" instance=ExtResource( 1 )]
+position = Vector2( -48, 0 )
+
+[node name="Block3" parent="Block" instance=ExtResource( 1 )]
+position = Vector2( -144, 0 )
+
+[node name="Block4" parent="Block" instance=ExtResource( 1 )]
+position = Vector2( -96, 0 )
+
+[node name="Block5" parent="Block" instance=ExtResource( 1 )]
+position = Vector2( 47, 0 )
+
+[node name="Block6" parent="Block" instance=ExtResource( 1 )]
+position = Vector2( 238, 0 )
+
+[node name="Block2" parent="Block/Block6" instance=ExtResource( 1 )]
+position = Vector2( -48, 0 )
+
+[node name="Block3" parent="Block/Block6" instance=ExtResource( 1 )]
+position = Vector2( -144, 0 )
+
+[node name="Block4" parent="Block/Block6" instance=ExtResource( 1 )]
+position = Vector2( -96, 0 )
+
+[node name="Block5" parent="Block/Block6" instance=ExtResource( 1 )]
+position = Vector2( 47, 0 )
+
+[node name="Character" parent="." instance=ExtResource( 2 )]
+position = Vector2( 389, 141 )

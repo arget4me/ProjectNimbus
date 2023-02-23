@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/infernotaur.png-499c87a1f84a309f3aba31cab696c34e.stex"
+path="res://.import/infernotaur.png-733eb010463903fc15fd8731e81dafe8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/infernotaur.png"
-dest_files=[ "res://.import/infernotaur.png-499c87a1f84a309f3aba31cab696c34e.stex" ]
+source_file="res://Images/monsters/infernotaur.png"
+dest_files=[ "res://.import/infernotaur.png-733eb010463903fc15fd8731e81dafe8.stex" ]
 
 [params]
 

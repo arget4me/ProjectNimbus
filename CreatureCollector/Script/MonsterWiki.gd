@@ -17,16 +17,16 @@ func _ready():
 
 func findMonsterImage(var monsterName) -> String:
 	var imageDirectory = Directory.new()
-	if imageDirectory.open("res://Images") == OK:
+	if imageDirectory.open("res://Images/monsters") == OK:
 		imageDirectory.list_dir_begin()
 		var file_name = imageDirectory.get_next()
 		while file_name != "":
 			if file_name == (monsterName.to_lower() + ".png"):
-				return "res://Images/" + monsterName.to_lower() + ".png"
+				return "res://Images/monsters/" + monsterName.to_lower() + ".png"
 			else:
 				file_name = imageDirectory.get_next()
 	
-	return "res://Images/unkownmonster.png"
+	return "res://Images/monsters/unkownmonster.png"
 
 func setMonster(var monster):
 	monsterName.text = monster.name

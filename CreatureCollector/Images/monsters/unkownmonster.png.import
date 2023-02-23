@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pyroclasm.png-3a00f191b956420a9a87b5db74bf3405.stex"
+path="res://.import/unkownmonster.png-45a04b3235158dac8b71ddc556dcca9b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/pyroclasm.png"
-dest_files=[ "res://.import/pyroclasm.png-3a00f191b956420a9a87b5db74bf3405.stex" ]
+source_file="res://Images/monsters/unkownmonster.png"
+dest_files=[ "res://.import/unkownmonster.png-45a04b3235158dac8b71ddc556dcca9b.stex" ]
 
 [params]
 
